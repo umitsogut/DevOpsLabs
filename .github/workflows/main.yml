@@ -22,14 +22,6 @@ jobs:
         run: mvn package
       - name: List built artifacts
         run: ls -lah target || true
-      - name: Show .dockerignore (if any)
-        run: |
-            if [ -f .dockerignore ]; then
-              echo "---- .dockerignore ----"
-              cat .dockerignore
-            else
-              echo "No .dockerignore"
-            fi
       - name: Build
         run: docker build -t se_methods .
       - name: Run image
