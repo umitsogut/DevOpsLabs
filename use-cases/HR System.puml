@@ -1,18 +1,18 @@
 @startuml
-
-actor HR as "HR Advisor"
-
-rectangle Database
-
-rectangle "HR System" {
-    usecase UC4 as "Get salaries
-    by role"
-
-    usecase UCa as "Print salaries"
-
-    HR - UC4
-    UC4 ..> UCa : include
-    UC4 - Database
+actor AN as "Analyst"
+left to right direction
+rectangle "System" {
+    usecase "Generate Country Reports" as UC1
+    usecase "Generate City Reports" as UC2
+    usecase "Generate Capital City Reports" as UC3
+    usecase "Generate Population Breakdown Reports" as UC4
+    usecase "Generate Population Reports" as UC5
+    usecase "Generate Language Reports" as UC6
 }
-
+AN --> UC1
+AN --> UC2
+AN --> UC3
+AN --> UC4
+AN --> UC5
+AN --> UC6
 @enduml
