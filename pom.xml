@@ -40,7 +40,7 @@
                     <finalName>devops</finalName>
                     <archive>
                         <manifest>
-                            <mainClass>com.napier.devops.App</mainClass>
+                            <mainClass>com.napier.labs.Main</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
