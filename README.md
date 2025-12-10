@@ -7,3 +7,5 @@ Develop Build Status ![GitHub Workflow Status (branch)](https://img.shields.io/g
 License [![LICENSE](https://img.shields.io/github/license/umitsogut/DevOpsLabs.svg?style=flat-square)](https://github.com/umitsogut/DevOpsLabs/blob/master/LICENSE)
 
 Release [![Releases](https://img.shields.io/github/release/umitsogut/DevOpsLabs/all.svg?style=flat-square)](https://github.com/umitsogut/DevOpsLabs/releases)
+
+CodeCov [![codecov](https://codecov.io/github/umitsogut/DevOpsLabs/graph/badge.svg?token=7E3LPVM9L8)](https://codecov.io/github/umitsogut/DevOpsLabs)
