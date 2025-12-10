@@ -20,12 +20,12 @@ public class Main {
             a.connect(args[0], Integer.parseInt(args[1]));
         }
 
-        Department dept = a.getDepartment("Development");
-        ArrayList<Employee> employees = a.getSalariesByDepartment(dept);
+        //Department dept = a.getDepartment("Development");
+        //ArrayList<Employee> employees = a.getSalariesByDepartment(dept);
 
 
         // Print salary report
-        a.printSalaries(employees);
+        //a.printSalaries(employees);
 
         // Disconnect from database
         a.disconnect();
@@ -39,8 +39,7 @@ public class Main {
             // Load Database driver
             Class.forName("com.mysql.cj.jdbc.Driver");
         } catch (ClassNotFoundException e) {
-            System.out.println("Could not load SQL driver");
-            System.exit(-1);
+            throw new RuntimeException("Could not load SQL driver", e);
         }
 
         int retries = 10;
